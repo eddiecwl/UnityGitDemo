@@ -5,8 +5,13 @@ using UnityEngine;
 public class myScript : MonoBehaviour
 {
     //testing
-    public bool isPlayer;
-    
+    public bool isPlayer1;
+    public bool isPlayer2;
+    public bool isPlayer3;
+    public bool isPlayer4;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
