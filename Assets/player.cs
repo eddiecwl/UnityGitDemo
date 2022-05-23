@@ -14,13 +14,13 @@ public class player : MonoBehaviour
 	void Update()
 	{
 		if (Input.GetKey("up"))
-			transform.Translate(Vector3.forward * 0.1f);
+			transform.Translate(Vector3.forward * 0.05f);
 		if (Input.GetKey("down"))
-			transform.Translate(Vector3.forward * -0.1f);
+			transform.Translate(Vector3.forward * -0.05f);
 		if (Input.GetKey("left"))
-			transform.Rotate(Vector3.up * -2);
+			transform.Rotate(Vector3.up * -1);
 		if (Input.GetKey("right"))
-			transform.Rotate(Vector3.up * 2);
+			transform.Rotate(Vector3.up * 1);
 
 	}
 
