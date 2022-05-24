@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	public float moveSpeed = 1.5f;
+	public float rotateSpeed = 1.0f;
+
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
@@ -14,13 +17,13 @@ public class player : MonoBehaviour
 	void Update()
 	{
 		if (Input.GetKey("up"))
-			transform.Translate(Vector3.forward * 0.08f);
+			transform.Translate(Vector3.forward * moveSpeed);
 		if (Input.GetKey("down"))
-			transform.Translate(Vector3.forward * -0.08f);
+			transform.Translate(Vector3.forward * -moveSpeed);
 		if (Input.GetKey("left"))
-			transform.Rotate(Vector3.up * -1.5f);
+			transform.Rotate(Vector3.up * -rotateSpeed);
 		if (Input.GetKey("right"))
-			transform.Rotate(Vector3.up * 1.5f);
+			transform.Rotate(Vector3.up * rotateSpeed);
 
 	}
 
